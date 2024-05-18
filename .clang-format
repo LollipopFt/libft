@@ -1,0 +1,3 @@
+AlignConsecutiveDeclarations: true
+BreakBeforeBraces: Allman
+UseTab: Always
