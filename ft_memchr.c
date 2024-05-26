@@ -1,13 +1,14 @@
 #include <stddef.h>
 
-void *memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char				 chr;
-	const unsigned char *str;
+	unsigned char		chr;
+	const unsigned char	*str;
 
 	chr = c;
 	str = s;
-	while (*str != chr && *str++ && n--);
+	while (*str != chr && *str++ && n--)
+		;
 	if (!*str)
 		return (NULL);
 	return ((void *)str);
